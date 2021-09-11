@@ -1,6 +1,6 @@
 const palendrome = (string) => {
     
-    let formattedString = string.replace(/\s/g, '').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"]/g, '').toLowerCase()
+    let formattedString = string.replace(/\s/g, '').replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()'"]/g, '').toLowerCase()
     let reverse = formattedString.split('').reverse().join('')
 
     if (formattedString === reverse) {
